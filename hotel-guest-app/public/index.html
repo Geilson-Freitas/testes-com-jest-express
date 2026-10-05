@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#173c36">
+		<title>Registro de hóspedes | Casa Verde Hotel</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<a class="wordmark" href="#inicio" aria-label="Casa Verde Hotel, início">
+				<span class="wordmark-mark" aria-hidden="true">CV</span>
+				<span>CASA VERDE <small>HOTEL</small></span>
+			</a>
+			<span class="header-note">HOSPEDAGEM COM CUIDADO</span>
+		</header>
+
+		<main id="inicio" class="page-shell">
+			<section class="registration" aria-labelledby="page-title">
+				<div class="section-heading">
+					<p class="eyebrow"><span aria-hidden="true"></span> RECEPÇÃO · NOVA RESERVA</p>
+					<h1 id="page-title">Registro de hóspedes<br>do hotel</h1>
+					<p class="section-detail">Informe os dados da hospedagem.</p>
+				</div>
+
+				<form id="guest-form">
+					<div class="field field-wide">
+						<label for="full-name">Nome completo</label>
+						<input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="Nome e sobrenome" required>
+					</div>
+
+					<div class="field">
+						<label for="email">E-mail</label>
+						<input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+					</div>
+
+					<div class="field">
+						<label for="phone">Telefone</label>
+						<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" required>
+					</div>
+
+					<div class="field">
+						<label for="check-in">Data de check-in</label>
+						<input id="check-in" name="checkIn" type="date" required>
+					</div>
+
+					<div class="field">
+						<label for="check-out">Data de check-out</label>
+						<input id="check-out" name="checkOut" type="date" required>
+					</div>
+
+					<div class="field field-wide guest-count">
+						<label for="guest-count">Número de hóspedes</label>
+						<input id="guest-count" name="guestCount" type="number" min="1" step="1" value="1" required>
+					</div>
+
+					<div class="form-footer field-wide">
+						<button type="submit">Registrar hóspedes <span aria-hidden="true">→</span></button>
+						<p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+					</div>
+				</form>
+			</section>
+			<div class="page-aside" aria-hidden="true">
+				<span class="aside-number">01</span>
+				<span class="aside-rule"></span>
+				<span class="aside-caption">CASA VERDE<br>· BRASIL ·</span>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<span>CASA VERDE HOTEL</span>
+			<span>REGISTRO DE HÓSPEDES</span>
+		</footer>
+	</body>
+</html>
